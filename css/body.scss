@@ -2,6 +2,7 @@
 .body {
     &__carrusel {
         grid-area: carrusel;
+        overflow:hidden;
         background-color: rgb(255, 255, 255);
     }
 
@@ -20,30 +21,40 @@
         }
     }
 
-    &__aliados {
+    &__aliadosContainer {
         grid-area: aliados;
-        background-color: rgb(255, 255, 255);
-
-        ul {
+        width: 100%;
+        overflow: hidden;
+        background-color: $fondoAliados;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 20px 0;
+        height: 120px;
+    
+        &--marcas {
             display: flex;
-            justify-content: space-around; 
-            padding-left: 40px;
-            padding-right: 40px;
-            margin: 20px 0;
-            list-style: none;
-
-            li {
-                @include flex();
-                flex: 1;
-
-                img {
-                    width: 70px;
-                    height: auto;
+            animation: aliadosCarrusel 36s linear infinite;
+            justify-content: start;
+    
+            img {
+                flex: 0 0 calc(100% / 8);
+                max-width: calc(100% / 8);
+                margin: 0;
+                filter: grayscale(100%);
+                transition: filter 0.3s ease, transform 0.3s ease;
+    
+                &:hover {
+                    filter: grayscale(0%);
+                    transform: scale(1.3);
                 }
+            }
+    
+            &:hover {
+                animation-play-state: paused;
             }
         }
     }
-
     &__unete {
         grid-area: unete;    
         display: flex;
@@ -75,7 +86,6 @@
             width: 20%;
         }
     }
-
     &__crece {
         grid-area: crece;
         display: flex;
@@ -109,12 +119,14 @@
         }
     }
     &__noticias{
+        margin-top: 30px;
         grid-area: noticias;
         display: flex;
         flex-direction: column;
         align-items: center; 
     }
     &__contactanos{
+        margin-top: 30px;
         grid-area: contacta;
         display: flex;
         flex-direction: column;
@@ -166,4 +178,14 @@
         }
     }
 
+}
+/* Animación por pasos */
+@keyframes aliadosCarrusel {
+    0% {
+        transform: translateX(0); 
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }

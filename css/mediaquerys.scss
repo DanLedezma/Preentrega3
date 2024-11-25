@@ -6,16 +6,16 @@
                              'nav        nav'       /*5*/
                              'carrusel   carrusel'  /*45*/
                              'somos      somos'     /*auto 1*/
-                             'aliados    aliados'   /*auto 2*/
                              'unete      unete'     /*auto 3*/
                              'crece      crece'     /*auto 4*/
+                             'aliados    aliados'   /*auto 2*/
                              'noticias   noticias'  /*auto 5*/
                              'contacta   contacta'  /*auto 6*/
                              'visitanos  visitanos' /*visitanos 7*/                             
                              'legal      direccion' /*auto 8*/ 
                              'redes      redes'     /*auto 9*/
                              'derechos   derechos'; /*auto 10*/
-        grid-template-rows: 10% 7% 45% auto auto auto auto auto auto auto auto auto auto ;
+        grid-template-rows: 10% 7% 45% auto auto auto 15% auto auto auto auto auto auto ;
     }
     
     .header__logo--img {
@@ -35,9 +35,6 @@
     .separador__titulo{
         font-size: 20px;
         width: auto;
-    }
-    .body__aliados ul li img {
-        width: 40px;
     }
     .body__visitanos .separador { 
         width: 100%;
@@ -81,9 +78,9 @@
         grid-template-areas:'logo      nav'
                             'carrusel  carrusel'
                             'somos     somos'
-                            'aliados   aliados'
                             'unete     unete'
                             'crece     crece'
+                            'aliados   aliados'
                             'contacta  contacta'
                             'visitanos visitanos' 
                             'legal     direccion'
@@ -140,8 +137,8 @@
         grid-template-areas: 'logo       nav'
                              'carrusel   carrusel'
                              'somos      somos'
-                             'aliados    aliados'
                              'unete      crece'
+                             'aliados    aliados'
                              'contacta   visitanos'
                              'legal      direccion  '
                              'redes      redes'

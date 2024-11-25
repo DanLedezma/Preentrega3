@@ -6,12 +6,14 @@ $fondoFooterLegal: gray;
 $fondoFooterDirecciones: rgb(94, 94, 94);
 $fondoFooterRedes: rgb(66, 66, 66);
 $fondoFooterDerechos: rgb(179, 179, 179);
+$fondoAliados: #cecbcb;
 $enlaces: #004896;
 $resolucionCelular: 480px;
 $resolucionTabletMin: 481px;
 $resolucionTabletMax: 768px;
 $resolucionComputadoraMin: 769px;
 $resolucionComputadoraMax: 1100px;
+
 
 @mixin textoAlineacion {
     text-align: center;
