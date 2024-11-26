@@ -1,4 +1,5 @@
-@use 'variables' as *;
+@use '../utilidades/variables' as *; 
+@use '../utilidades/mixins' as *;
 .header {
     &__logo {
         grid-area: logo;

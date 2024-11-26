@@ -276,105 +276,6 @@ html {
     transform: translateX(-100%);
   }
 }
-.footer__legal {
-  grid-area: legal;
-  background-color: gray;
-  text-decoration: none;
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
-}
-.footer__legal p {
-  padding-top: 20px;
-  font-family: "cocomate", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  margin: 0;
-  color: inherit;
-}
-.footer__legal ul {
-  margin: 0 auto;
-  text-align: left;
-  display: inline-block;
-  margin-bottom: 10px;
-}
-.footer__legal ul li {
-  padding-top: 10px;
-  list-style-type: none;
-}
-.footer__legal ul li a {
-  text-decoration: none;
-  color: inherit;
-}
-.footer__legal ul li a:hover {
-  text-decoration: underline;
-  color: inherit;
-}
-.footer__direcciones {
-  grid-area: direccion;
-  background-color: rgb(94, 94, 94);
-  text-decoration: none;
-  padding: 20px;
-  text-align: center;
-}
-.footer__direcciones--contenedorSucursales {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 90%;
-}
-.footer__direcciones--contenedorSucursales h5 {
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 10px 0 5px;
-  color: inherit;
-}
-.footer__direcciones--contenedorSucursales p {
-  margin: 0 0 10px;
-  color: inherit;
-}
-.footer__redes {
-  grid-area: redes;
-  background-color: rgb(66, 66, 66);
-  padding: 10px;
-}
-.footer__redes ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.footer__redes ul li {
-  flex: 2 2 33%;
-  display: flex;
-  justify-content: center;
-  margin: 5px 0;
-}
-.footer__redes--iconoNav {
-  width: 50px;
-  height: 50px;
-}
-.footer__derechos {
-  grid-area: derechos;
-  display: flex;
-  background-color: rgb(179, 179, 179);
-  color: rgb(80, 80, 80);
-  text-align: center;
-  line-height: 30px;
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  font-optical-sizing: auto;
-  font-style: normal;
-  justify-content: center;
-  align-items: center;
-}
-
 @media (max-width: 480px) {
   .grid-Container {
     grid-template-areas: "logo       logo" "nav        nav" "carrusel   carrusel" "somos      somos" "unete      unete" "crece      crece" "aliados    aliados" "noticias   noticias" "contacta   contacta" "visitanos  visitanos" "legal      direccion" "redes      redes" "derechos   derechos"; /*auto 10*/
@@ -539,6 +440,104 @@ html {
     font-size: 26px;
     width: 120px;
   }
+}
+.footer__legal {
+  grid-area: legal;
+  background-color: gray;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.footer__legal p {
+  padding-top: 20px;
+  font-family: "cocomate", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  color: inherit;
+}
+.footer__legal ul {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.footer__legal ul li {
+  padding-top: 10px;
+  list-style-type: none;
+}
+.footer__legal ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer__legal ul li a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+.footer__direcciones {
+  grid-area: direccion;
+  background-color: rgb(94, 94, 94);
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+}
+.footer__direcciones--contenedorSucursales {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+}
+.footer__direcciones--contenedorSucursales h5 {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: inherit;
+}
+.footer__direcciones--contenedorSucursales p {
+  margin: 0 0 10px;
+  color: inherit;
+}
+.footer__redes {
+  grid-area: redes;
+  background-color: rgb(66, 66, 66);
+  padding: 10px;
+}
+.footer__redes ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.footer__redes ul li {
+  flex: 2 2 33%;
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+.footer__redes--iconoNav {
+  width: 50px;
+  height: 50px;
+}
+.footer__derechos {
+  grid-area: derechos;
+  display: flex;
+  background-color: rgb(179, 179, 179);
+  color: rgb(80, 80, 80);
+  text-align: center;
+  line-height: 30px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  font-optical-sizing: auto;
+  font-style: normal;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
